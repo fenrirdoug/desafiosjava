@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Situação do Aluno</h1></header>
+
+    <main>
+      <div>
+        <input
+          type="button"
+          value="Entrar com o valor das notas"
+          id="notas "
+          onclick="notas()"
+        />
+      </div>
+
+      <div>
+        <p>Clique no botao acima para informar as notas dos aluno.</p>
+      </div>
+
+      <div>
+        <table>
+          <caption>
+            Tabela de Situação do Aluno
+          </caption>
+          <thead>
+            <tr>
+              <th>Média</th>
+              <th>Situação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abaixo de 3,0</td>
+              <td id="vermelho">REPROVADO</td>
+            </tr>
+            <tr>
+              <td>Entre 3,0 e 6,0</td>
+              <td id="amarelo">RECUPERAÇÃO</td>
+            </tr>
+            <tr>
+              <td>Acima de 6,0</td>
+              <td id="verde">APROVADO</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <p id="resultado"></p>
+      </div>
+    </main>
+
+    <footer>&copy:Fenrirdoug</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
